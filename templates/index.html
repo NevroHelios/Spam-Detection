@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Spam</title>
+    <style>
+        /* Center the form */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: auto; /* This centers the container */
+        }
+        
+        /* Style the form */
+        form {
+            text-align: center;
+        }
+        /* Style the textarea and button */
+        textarea {
+            width: calc(100% - 20px); /* Adjusted width */
+            min-height: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            box-sizing: border-box; /* Ensure padding is included in the width calculation */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="get">
+            <textarea name="mail" id="mailentry" cols="30" rows="10" placeholder="Enter your email"></textarea>
+            <br>
+            <button type="submit" id="predictbtn">Predict</button>
+        </form>
+        <br>
+        <h1 id="prediction">
+            {% if prediction %}
+                Prediction: {{ prediction }}
+            {% endif %}
+        </h1>
+    </div>
+</body>
+</html>
