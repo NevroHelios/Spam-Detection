@@ -6,7 +6,7 @@ try:
     # Try importing PorterStemmer and stopwords
     from nltk.stem import PorterStemmer
     from nltk.corpus import stopwords
-except ImportError:
+except:
     # If import fails, download necessary NLTK resources
     nltk.download('punkt')
     nltk.download('stopwords')
