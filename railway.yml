@@ -1,4 +1,0 @@
-version: v1
-environments:
-  production:
-    python: "3.12.3"
