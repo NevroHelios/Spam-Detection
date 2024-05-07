@@ -16,7 +16,7 @@ except:
     from nltk.corpus import stopwords
 
 # path to the saved vectorizer and load it
-VEC_PATH = "Preprocess\\tfidf_vectorizer.pkl"
+VEC_PATH = "Preprocess/tfidf_vectorizer.pkl"
 with open(VEC_PATH, 'rb') as file:
     tfidf = pickle.load(file)
 

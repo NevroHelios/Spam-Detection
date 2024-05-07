@@ -7,7 +7,7 @@ from Preprocess.preprocess import pre_process
 from model.model import DetectSpamV0
 
 # path to the saved model
-PATH = "model\\model_detect_spam_V0.pt"
+PATH = "model/model_detect_spam_V0.pt"
 
 # get the availaable device
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
