@@ -31,4 +31,4 @@ To run the project, follow these steps:
 
 ## Contact
 
-For any questions or issues regarding this project, feel free to contact [Arka Daash](mailto:dasharka05@gmail.com).
+For any questions or issues regarding this project, feel free to contact [me](mailto:dasharka05@gmail.com).
